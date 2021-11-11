@@ -2,7 +2,7 @@ from module1 import *
 
 while 1:
     print("Funktsioonid".center(50," "))
-    v=input("Arithmetic - A, Is_year_leap - Y, Square - S")
+    v=input("Arithmetic - A, Is_year_leap - Y, Square - S, Season - M")
     v=input()
 
     if v.upper()=="A":
@@ -16,4 +16,7 @@ while 1:
         print(rezult)
     if v.upper()=="S":
         rezult=square(int(input("Sisesta ruudu külk: ")))
+        print(rezult)
+    if v.upper()=="M":
+        rezult=season(int(input("Sisesta kuu: ")))
         print(rezult)

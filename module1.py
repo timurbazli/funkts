@@ -42,9 +42,40 @@ def is_year_leap(year: int):
     return vastus
 
 def square(s1:float):
-    p=s1*4
-    s=s1*s1
-    d=(s1**2) + (s1**2)
-    print("P=", p)
-    print("S=", s)
-    print("d=", d)   
+    if s1!=0:
+        otv=""
+        p=s1*4
+        s=s1*s1
+        d=sqrt(s1*s1+s1*s1)
+        print("P=", p)
+        print("S=", s)
+        print("d=", d)
+    return otv
+
+def season(kuu:int):
+
+    """
+    ord - десятичное число, которое кодируется в букву. 
+    chr - наборот берёт число и возвращает букву.
+    """
+    if kuu== 12 or 1 <= kuu <=2:
+        vd="See on talv"
+    elif 3 <= kuu <= 5:
+        vd="See on kevad"
+    elif 6 <= kuu <= 8:
+        vd="See on suvi"
+    elif 9 <= kuu <= 11:
+        vd="See on sügi"
+    else:
+        vd="Viga!"
+    return vd
+
+#def bank(ban:float):
+#    if ban==0:
+#        total="Viga!"
+#    elif ban*1.1:
+
+
+
+#    ord - десятичное число, которое кодируется в букву. 
+#    chr - наборот берёт число и возвращает букву.
